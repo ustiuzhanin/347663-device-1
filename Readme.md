@@ -1,7 +1,6 @@
 # Личный проект «Девайс»
 
 * Студент: [Slava Ustiuzhanin](https://up.htmlacademy.ru/htmlcss/22/user/347663).
-* Наставник: `Неизвестно`.
 
 ---
 
