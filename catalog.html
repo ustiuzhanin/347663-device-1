@@ -3,19 +3,22 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
     <img class="device-logo" src="img/device-logo.svg" width="165" height="35" alt="Магазин 'Device'">
-    <ul class="list header-nav">
-      <li>
+    <div class="header-container">
+      <div class="search-wrapper">
         <input type="search" name="search" placeholder="Поиск по сайту">
-      </li>
-      <li><a class="nav-link" href="#">Войти</a></li>
-      <li><a class="nav-link" href="#">Сравнить</a></li>
-      <li><a class="nav-link" href="#">Корзина</a></li>
-    </ul>
+      </div>
+      <ul class="list header-nav">
+        <li class="header-nav-item"><a class="nav-link" href="#">Войти</a></li>
+        <li class="header-nav-item"><a class="nav-link" href="#">Сравнить</a></li>
+        <li class="header-nav-item"><a class="nav-link" href="#">Корзина</a></li>
+      </ul>
+    </div>
     <ul class="list main-nav">
       <li class="main-nav-item">
         <a class="nav-link" href="#">Каталог товаров</a>
