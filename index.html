@@ -11,7 +11,7 @@
     <img class="device-logo" src="img/device-logo.svg" width="165" height="35" alt="Магазин 'Device'">
     <div class="header-container">
       <div class="search-wrapper">
-        <input type="search" name="search" placeholder="Поиск по сайту">
+        <input class="search" type="search" name="search" placeholder="Поиск по сайту">
       </div>
       <ul class="list header-nav">
         <li class="header-nav-item"><a class="nav-link" href="#">Войти</a></li>
@@ -22,7 +22,7 @@
     <ul class="list main-nav">
       <li class="main-nav-item">
         <a class="nav-link" href="#">Каталог товаров</a>
-        <div class="products-nav-wrapper">
+        <div class="products-nav-wrapper visually-hidden">
           <ul class="list products-nav-list">
             <li class="products-nav-item"><a class="nav-link" href="#">Виртуальная реальность</a> </li>
             <li class="products-nav-item"><a class="nav-link" href="#">Моноподы для селфи </a></li>
@@ -50,7 +50,7 @@
           <img src="img/monopod-slider.png" height="486" width="384" alt="Селфи палка">
         </div>
         <div class="slider-wrapper slider-info-wrapper">
-          <h3 class="headline">Делай селфи, как Бен Стиллер!</h3>
+          <h3 class="headline slider-headline">Делай селфи, как Бен Стиллер!</h3>
           <p class="slider-text">
             Самая длинная палка для селфи доступна в нашем магазине.
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
@@ -62,12 +62,12 @@
             <button class="slider-nav-bullet" type="button" aria-label="Третий слайд"></button>
           </div>
           <table class="slider-table">
-            <tr class="table-row-one">
+            <tr class="table-row table-row-one">
               <td class="table-top">Длина палки</td>
               <td class="table-top">Вес палки</td>
               <td class="table-top">Материал</td>
             </tr>
-            <tr>
+            <tr class="table-row">
               <td class="table-bot">8,5 м</td>
               <td class="table-bot">5 кг</td>
               <td class="table-bot">Карбон</td>
@@ -81,7 +81,7 @@
           <img src="img/bracelet-slider.png" height="485" width="345" alt="Мотивирующий фитнес-браслет">
         </div>
         <div class="slider-wrapper slider-info-wrapper">
-          <h3 class="headline">Худеем правильно!</h3>
+          <h3 class="headline slider-headline">Худеем правильно!</h3>
           <p>
             Мотивирующие фитнес-браслеты помогут найти в себе силы  не пропускать занятия и соблюдать диету.
           </p>
@@ -92,10 +92,10 @@
             <button class="slider-nav-bullet" type="button" aria-label="Третий слайд"></button>
           </div>
           <table class="slider-table">
-            <tr class="table-row-one">
+            <tr class="table-row table-row-one">
               <td class="table-top">Без подзарядки</td>
             </tr>
-            <tr>
+            <tr class="table-row">
               <td class="table-bot">48 часов</td>
             </tr>
           </table>
@@ -107,7 +107,7 @@
           <img src="img/drone-slider.png" height="485" width="345" alt="Дрон с мощным лазером">
         </div>
         <div class="slider-wrapper slider-info-wrapper">
-          <h3 class="headline">Порхает как бабочка, жалит как пчела!</h3>
+          <h3 class="headline slider-headline">Порхает как бабочка, жалит как пчела!</h3>
           <p>
             Этот обычный, на первый взгляд, квадрокоптер оснащен  мощным лазером, замаскированным под стандартную камеру.
           </p>
@@ -118,11 +118,11 @@
             <button class="active slider-nav-bullet" type="button" aria-label="Третий слайд"></button>
           </div>
           <table class="slider-table">
-            <tr class="table-row-one">
+            <tr class="table-row table-row-one">
               <td class="table-top">Дальность полета</td>
               <td class="table-top">Радиус поражения</td>
             </tr>
-            <tr>
+            <tr class="table-row">
               <td class="table-bot">800 м</td>
               <td class="table-bot">50 м</td>
             </tr>
@@ -146,7 +146,7 @@
         <li class="product-item">
           <a class="product-link" href="#">
             <div class="product-image-wrapper">
-              <img class="product-img" src="img/popular-2.svg" alt="Очки виртуальной реальности">
+              <img class="product-img monopod-logo" src="img/popular-2.svg" alt="Очки виртуальной реальности">
             </div>
             <p>Моноподы для селфи</p>
           </a>
@@ -190,10 +190,10 @@
       <h2 class="visually-hidden">Наши преимущества</h2>
       <div class="container">
         <ul class="list extras-list">
-          <li class="extras-item active">
+          <li class="extras-item">
             <a class="btn" href="#">Доставка</a>
           </li>
-          <li class="extras-item">
+          <li class="extras-item active">
             <a class="btn" href="#">Гарантия</a>
           </li>
           <li class="extras-item">
@@ -203,7 +203,7 @@
 
         <ul class="list extras-descr-list">
           <li class="extras-descr-item">
-            <div class="extras-wrapper">
+            <div class="visually-hidden extras-wrapper">
               <h3 class="headline">Доставка</h3>
               <p>
                 Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
@@ -211,7 +211,7 @@
             </div>
           </li>
           <li class="extras-descr-item">
-            <div class="visually-hidden extras-wrapper">
+            <div class="extras-wrapper">
               <h3 class="headline">Гарантия</h3>
               <p>
                 Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
@@ -263,7 +263,9 @@
       <div class="info-wrapper">
         <h2 class="headline">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <img src="img/map.jpg" width="560" height="222" alt="Мы находимся по адресу: улица Строителей, 15.">
+        <a class="map-link" href="#">
+          <img src="img/map.jpg" width="560" height="222" alt="Мы находимся по адресу: улица Строителей, 15.">
+        </a>
         <a href="#" class="btn">Напишите нам</a>
       </div>
     </section>
@@ -274,9 +276,9 @@
       <div class="footer-wrapper-top">
         <img src="img/device-logo.svg" width="165" height="35" alt="Магазин 'Device'">
         <ul class="list footer-nav">
-          <li><a class="footer-nav-link" href="#">Войти</a></li>
-          <li><a class="footer-nav-link" href="#">Сравнить</a></li>
-          <li><a class="footer-nav-link" href="#">Корзина</a></li>
+          <li class="footer-nav-item"><a class="footer-nav-link" href="#">Войти</a></li>
+          <li class="footer-nav-item"><a class="footer-nav-link" href="#">Сравнить</a></li>
+          <li class="footer-nav-item"><a class="footer-nav-link" href="#">Корзина</a></li>
         </ul>
       </div>
 
@@ -293,17 +295,17 @@
       <div class="footer-wrapper-bot">
         <ul class="list social-list">
           <li class="social-item">
-            <a href="#" aria-label="Facebook">
+            <a class="social-link" href="#" aria-label="Facebook">
               <img class="social-icon" src="img/fb.svg" alt="Facebook">
             </a>
           </li>
           <li class="social-item">
-            <a href="#" aria-label="Instagram">
+            <a class="social-link" href="#" aria-label="Instagram">
               <img class="social-icon" src="img/instagram.svg" alt="Instagram">
             </a>
           </li>
           <li class="social-item">
-            <a href="#" aria-label="Twitter">
+            <a class="social-link" href="#" aria-label="Twitter">
               <img class="social-icon" src="img/twitter.svg" alt="Twitter">
             </a>
           </li>
