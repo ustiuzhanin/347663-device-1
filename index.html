@@ -8,21 +8,39 @@
 </head>
 <body>
   <header class="main-header container">
-    <img class="device-logo" src="img/device-logo.svg" width="165" height="35" alt="Магазин 'Device'">
+    <svg class="device-logo" xmlns="http://www.w3.org/2000/svg" width="164" height="36"><text transform="matrix(1.827 0 0 1.814 -3.319 34.511)" font-size="26.459" font-family="Gilroy" font-weight="800">DEVICE</text></svg>
     <div class="header-container">
       <div class="search-wrapper">
-        <input class="search" type="search" name="search" placeholder="Поиск по сайту">
+        <form class="search-form" action="https://echo.htmlacademy.ru">
+          <input class="search" type="search" name="search" placeholder="Поиск по сайту">
+          <button class="search-btn" type="submit"><span>Найти</span></button>
+        </form>
       </div>
       <ul class="list header-nav">
-        <li class="header-nav-item"><a class="nav-link" href="#">Войти</a></li>
-        <li class="header-nav-item"><a class="nav-link" href="#">Сравнить</a></li>
-        <li class="header-nav-item"><a class="nav-link" href="#">Корзина</a></li>
+        <li class="header-nav-item nav-login">
+          <a class="nav-link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>
+            Войти
+          </a>
+        </li>
+        <li class="header-nav-item nav-compare">
+          <a class="nav-link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/></svg>
+            Сравнить
+          </a>
+        </li>
+        <li class="header-nav-item nav-cart">
+          <a class="nav-link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/></svg>
+            Корзина
+          </a>
+        </li>
       </ul>
     </div>
     <ul class="list main-nav">
-      <li class="main-nav-item">
+      <li class="main-nav-item nav-link-products">
         <a class="nav-link" href="#">Каталог товаров</a>
-        <div class="products-nav-wrapper visually-hidden">
+        <div class="products-nav-wrapper">
           <ul class="list products-nav-list">
             <li class="products-nav-item"><a class="nav-link" href="#">Виртуальная реальность</a> </li>
             <li class="products-nav-item"><a class="nav-link" href="#">Моноподы для селфи </a></li>
@@ -45,7 +63,7 @@
   <main>
     <section class="catch-slider container">
       <h1 class="visually-hidden">Device - интернет магазин гаджетов</h1>
-      <div class="slider-item">
+      <div class="slider-item visually-hidden">
         <div class="slider-wrapper">
           <img src="img/monopod-slider.png" height="486" width="384" alt="Селфи палка">
         </div>
@@ -57,9 +75,11 @@
           </p>
           <div class="slder-nav-wrapper">
             <a href="#" class="btn">Подробнее</a>
-            <button class="aсtive slider-nav-bullet" type="button" aria-label="Первый слайд"></button>
-            <button class="slider-nav-bullet" type="button" aria-label="Второй слайд"></button>
-            <button class="slider-nav-bullet" type="button" aria-label="Третий слайд"></button>
+            <div class="nav-buller-wrapper">
+              <button class="aсtive slider-nav-bullet" type="button" aria-label="Первый слайд"></button>
+              <button class="slider-nav-bullet" type="button" aria-label="Второй слайд"></button>
+              <button class="slider-nav-bullet" type="button" aria-label="Третий слайд"></button>
+            </div>
           </div>
           <table class="slider-table">
             <tr class="table-row table-row-one">
@@ -76,7 +96,7 @@
         </div>
       </div>
 
-      <div class="slider-item visually-hidden">
+      <div class="slider-item">
         <div class="slider-wrapper">
           <img src="img/bracelet-slider.png" height="485" width="345" alt="Мотивирующий фитнес-браслет">
         </div>
@@ -87,9 +107,11 @@
           </p>
           <div class="slder-nav-wrapper">
             <a href="#" class="btn">Подробнее</a>
-            <button class="slider-nav-bullet" type="button" aria-label="Первый слайд"></button>
-            <button class="active slider-nav-bullet" type="button" aria-label="Второй слайд"></button>
-            <button class="slider-nav-bullet" type="button" aria-label="Третий слайд"></button>
+            <div class="nav-buller-wrapper">
+              <button class="slider-nav-bullet" type="button" aria-label="Первый слайд"></button>
+              <button class="aсtive slider-nav-bullet" type="button" aria-label="Второй слайд"></button>
+              <button class="slider-nav-bullet" type="button" aria-label="Третий слайд"></button>
+            </div>
           </div>
           <table class="slider-table">
             <tr class="table-row table-row-one">
@@ -113,9 +135,11 @@
           </p>
           <div class="slder-nav-wrapper">
             <a href="#" class="btn">Подробнее</a>
-            <button class="slider-nav-bullet" type="button" aria-label="Первый слайд"></button>
-            <button class="slider-nav-bullet" type="button" aria-label="Второй слайд"></button>
-            <button class="active slider-nav-bullet" type="button" aria-label="Третий слайд"></button>
+            <div class="nav-buller-wrapper">
+              <button class="slider-nav-bullet" type="button" aria-label="Первый слайд"></button>
+              <button class="slider-nav-bullet" type="button" aria-label="Второй слайд"></button>
+              <button class="aсtive slider-nav-bullet" type="button" aria-label="Третий слайд"></button>
+            </div>
           </div>
           <table class="slider-table">
             <tr class="table-row table-row-one">
@@ -202,31 +226,25 @@
         </ul>
 
         <ul class="list extras-descr-list">
-          <li class="extras-descr-item">
-            <div class="visually-hidden extras-wrapper">
-              <h3 class="headline">Доставка</h3>
-              <p>
-                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-              </p>
-            </div>
+          <li class="visually-hidden extras-descr-item extras-delivery">
+            <h3 class="headline">Доставка</h3>
+            <p>
+              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+            </p>
           </li>
-          <li class="extras-descr-item">
-            <div class="extras-wrapper">
-              <h3 class="headline">Гарантия</h3>
-              <p>
-                Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-                Товар, не дом, конечно же.
-              </p>
-            </div>
+          <li class="extras-descr-item extras-warranty">
+            <h3 class="headline">Гарантия</h3>
+            <p>
+              Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+              Товар, не дом, конечно же.
+            </p>
           </li>
-          <li class="extras-descr-item">
-            <div class="visually-hidden extras-wrapper">
-              <h3 class="headline">Кредит</h3>
-              <p>
-                Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
-                условия кредита. Выгодные для нашего банка, разумеется.
-              </p>
-            </div>
+          <li class="visually-hidden extras-descr-item extras-credit">
+            <h3 class="headline">Кредит</h3>
+            <p>
+              Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+              условия кредита. Выгодные для нашего банка, разумеется.
+            </p>
           </li>
         </ul>
       </div>
@@ -235,16 +253,16 @@
     <section class="partners container">
       <h2 class="visually-hidden">Наши партнеры</h2>
       <a class="partners-link" href="#">
-        <img class="partners-image" src="img/dji-logo-color.png" width="300" height="100" alt="Dji">
+        <img class="partners-image" src="img/dji-logo-color.png" width="260" height="100" alt="Dji">
       </a>
       <a class="partners-link" href="#">
-        <img class="partners-image" src="img/spgadgets-logo-color.png" width="300" height="100" alt="SP Gadgets">
+        <img class="partners-image" src="img/spgadgets-logo-color.png" width="260" height="100" alt="SP Gadgets">
       </a>
       <a class="partners-link" href="#">
-        <img class="partners-image" src="img/gopro-logo-color.png" width="300" height="100" alt="GoPro">
+        <img class="partners-image" src="img/gopro-logo-color.png" width="260" height="100" alt="GoPro">
       </a>
       <a class="partners-link" href="#">
-        <img class="partners-image" src="img/vive-logo-color.png" width="300" height="100" alt="Vive">
+        <img class="partners-image" src="img/vive-logo-color.png" width="260" height="100" alt="Vive">
       </a>
     </section>
 
@@ -274,11 +292,26 @@
   <footer class="main-footer">
     <div class="container">
       <div class="footer-wrapper-top">
-        <img src="img/device-logo.svg" width="165" height="35" alt="Магазин 'Device'">
+        <svg class="footer-device-logo" xmlns="http://www.w3.org/2000/svg" width="164" height="36"><text transform="matrix(1.827 0 0 1.814 -3.319 34.511)" font-size="26.459" font-family="Gilroy" font-weight="800">DEVICE</text></svg>
         <ul class="list footer-nav">
-          <li class="footer-nav-item"><a class="footer-nav-link" href="#">Войти</a></li>
-          <li class="footer-nav-item"><a class="footer-nav-link" href="#">Сравнить</a></li>
-          <li class="footer-nav-item"><a class="footer-nav-link" href="#">Корзина</a></li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>
+              Войти
+            </a>
+          </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/></svg>
+              Сравнить
+            </a>
+            </li>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/></svg>
+              Корзина
+            </a>
+          </li>
         </ul>
       </div>
 
@@ -310,6 +343,9 @@
             </a>
           </li>
         </ul>
+        <a class="html-academy-logo" href="#" aria-label="Html Academy">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09"><path fill="#FFC600" d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/></svg>
+        </a>
       </div>
     </div>
   </footer>
