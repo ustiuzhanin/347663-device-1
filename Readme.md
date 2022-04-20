@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Slava Ustiuzhanin](https://up.htmlacademy.ru/htmlcss/22/user/347663).
-
+dasd
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
