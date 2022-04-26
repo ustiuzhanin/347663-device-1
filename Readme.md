@@ -1,14 +1,31 @@
 # Личный проект «Девайс»
 
 * Студент: [Slava Ustiuzhanin](https://up.htmlacademy.ru/htmlcss/22/user/347663).
-
+dasd
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
 
 ---
+asdasd
 
+asdasd2
+2
+
+
+sad
+222222
+
+
+
+3333333
+
+
+3
+3
+3
+3
 ### Памятка
 
 #### 1. Зарегистрируйтесь на Гитхабе
